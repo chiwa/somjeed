@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./somjeed-be
+    container_name: somjeed-backend
+    ports:
+      - "8081:8081"
+    networks:
+      - somjeed-net
+
+  frontend:
+    build: ./somjeed-fe
+    container_name: somjeed-frontend
+    ports:
+      - "3000:80"        # FE เสิร์ฟที่ :80 ภายในคอนเทนเนอร์
+    depends_on:
+      - backend
+    networks:
+      - somjeed-net
+
+networks:
+  somjeed-net:
+    driver: bridge
