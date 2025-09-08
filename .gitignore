@@ -1,0 +1,32 @@
+# === Java / Spring Boot ===
+target/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# === IntelliJ / Eclipse / VSCode ===
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+
+# === Mac ===
+.DS_Store
+
+# === Node / React ===
+node_modules/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Env / Secrets ===
+.env
+*.env.local
