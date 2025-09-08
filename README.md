@@ -46,6 +46,7 @@ docker compose down -v --remove-orphans
 docker builder prune -f
 docker image prune -f
 docker compose up --build -d
+```
 
-### Open Brwoser
+### 2. Open Browser 
 http://localhost:3000/
