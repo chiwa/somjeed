@@ -5,7 +5,7 @@ It demonstrates conversation flow with greeting, intent prediction, intent detec
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 - **Backend:** Spring Boot 3.5 (Java 21), REST API, Swagger/OpenAPI
 - **Frontend:** React 18 (Vite), simple chat UI
 - **Infra:** Docker Compose (multi-service FE+BE)
@@ -14,15 +14,15 @@ It demonstrates conversation flow with greeting, intent prediction, intent detec
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 ![High-Level Architecture](/docs/diagrams/architecture.png)
 
 ---
 
-## 🔄 Conversation Sequence
+## Conversation Sequence
 ![Conversation Flow](/docs/diagrams/sequence.png)
 
-## 🔄 Conversation Activity
+## Conversation Activity
 ![Conversation Flow](/docs/diagrams/activity.png)
 
 Flow includes:
@@ -33,12 +33,12 @@ Flow includes:
 
 ---
 
-## 📦 Class Diagram
+## Class Diagram
 ![Class Diagram](/docs/diagrams/class-diagram.png)
 
 ---
 
-## ⚡ How to Run
+## How to Run
 
 ### 1. Build & Run with Docker Compose
 ```bash
@@ -46,3 +46,6 @@ docker compose down -v --remove-orphans
 docker builder prune -f
 docker image prune -f
 docker compose up --build -d
+
+### Open Brwoser
+http://localhost:3000/
