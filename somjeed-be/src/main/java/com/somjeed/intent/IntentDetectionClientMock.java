@@ -16,7 +16,7 @@ public class IntentDetectionClientMock implements IntentDetectionClient {
          q = q.toLowerCase();
 
         if (matchesAny(q, Arrays.asList("statement", "billing", "bill"))) {
-            return "here is your e-statement: https://scb.cardx.bank/statement.pdf";
+            return "here is your e-statement: https://xxx.bank/statement.pdf";
         }
 
         if (matchesAny(q, Arrays.asList("lost card", "card missing"))) {
@@ -28,7 +28,7 @@ public class IntentDetectionClientMock implements IntentDetectionClient {
         }
 
         if (matchesAny(q, Arrays.asList("redeem", "redemption"))) {
-            return "Please go to https://scb.cardx.bank/redeem for redeem.";
+            return "Please go to https://xxx.bank/redeem for redeem.";
         }
 
         if (matchesAny(q, Arrays.asList("balance", "available"))) {

@@ -106,7 +106,7 @@ class ChatControllerWebMvcTest {
     @Test
     void detectionFlow() throws Exception {
         Mockito.when(detectionService.detection("statement"))
-                .thenReturn("Your latest e-statement : https://scb.cardx.bank/statement.pdf");
+                .thenReturn("Your latest e-statement : https://xxx.bank/statement.pdf");
 
         mvc.perform(post("/api/chat")
                         .contentType(MediaType.APPLICATION_JSON)
@@ -114,7 +114,7 @@ class ChatControllerWebMvcTest {
                             {"sessionId":"s1","firstMessage":false,"message":"statement"}
                         """))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.messages[0]").value("Your latest e-statement : https://scb.cardx.bank/statement.pdf"));
+                .andExpect(jsonPath("$.messages[0]").value("Your latest e-statement : https://xxx.bank/statement.pdf"));
     }
 
 

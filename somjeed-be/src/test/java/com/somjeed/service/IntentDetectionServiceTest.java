@@ -24,7 +24,7 @@ class IntentDetectionServiceTest {
     @Test
     void detectionDelegates() {
         String input = "please show my statement";
-        String expected = "here is your e-statement: https://scb.cardx.bank/statement.pdf";
+        String expected = "here is your e-statement: https://xxx.bank/statement.pdf";
 
         when(detectionClient.getIntentDetection(input)).thenReturn(expected);
 

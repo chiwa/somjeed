@@ -8,7 +8,7 @@
 		<version>3.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.cardx</groupId>
+	<groupId>com.chat</groupId>
 	<artifactId>somjeed-be</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>somjeed-be</name>
