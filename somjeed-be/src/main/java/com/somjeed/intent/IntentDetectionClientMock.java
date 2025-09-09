@@ -39,6 +39,14 @@ public class IntentDetectionClientMock implements IntentDetectionClient {
             return "Call Center number is 1111";
         }
 
+        if (matchesAny(q, Arrays.asList("hello"))) {
+            return "Hello World";
+        }
+
+        if (matchesAny(q, Arrays.asList("chiwa"))) {
+            return "Chiwa Kantawong";
+        }
+
         return "sorry, i only know: call center, statement, lost card, points, redeem, or balance.";
     }
 
