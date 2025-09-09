@@ -44,10 +44,8 @@ public class IntentDetectionClientMock implements IntentDetectionClient {
                 .orElse(FALLBACK);
     }
 
-    // ใช้ record ให้กระชับ (Java 21)
     private record Rule(List<String> keywords, String response) {
         boolean matches(String text) {
-            // contains แบบง่าย ๆ; ถ้าภายหลังอยากใช้ regex/word-boundary ก็มาแก้จุดนี้จุดเดียว
             return keywords.stream().anyMatch(text::contains);
         }
     }
